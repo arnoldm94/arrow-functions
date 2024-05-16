@@ -215,15 +215,8 @@ console.log(frasesfood);
 
 
 
-
-
-
-/* 
-
-
- a
-Filter
-Dado el siguiente array, devolver un array con los nombres de los elementos que valgan más de 300 euros
+//Filter
+//Dado el siguiente array, devolver un array con los nombres de los elementos que valgan más de 300 euros
 const inventory = [
         {
           name: 'Mobile phone',
@@ -243,17 +236,22 @@ const inventory = [
         }
       ];
      
+     const arraycaro = inventory.filter((caro) => caro.price > 300)
+     console.log(arraycaro)
+     arraycaro.forEach(p=>console.log(p.name))
        // [
         //  'TV Samsung,',
         //  'Viaje a Cancún'
        // ]
+
+ 
       
-Reduce
-Concatena todos los elementos del array con reduce para que devuelva una sola frase
+//Reduce
+//Concatena todos los elementos del array con reduce para que devuelva una sola frase
 const sentenceElements = [
     'Me',
     'llamo',
-   // Tu nombre aquí! 
+   'Arnold!', 
     'y',
     'quiero',
     'sentir',
@@ -262,6 +260,6 @@ const sentenceElements = [
     'con',
     'javascript'
     ];
-   
+  const concatenado =  sentenceElements.reduce((a,b) => a +" "+ b)
+  console.log(concatenado);
 // Resultado--> 'Me llamo XX y quiero sentir la fuerza con javascript'
- */
